@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8069b46730a0ee85a7f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Tic-Tak-Toe",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Tic-Tak-Toe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tic-Tak-Toe-Debug-1a3ad42e7ffa32fccf6b.json",
+					"name" : "Tic-Tak-Toe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Tic-Tak-Toe_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tic-Tak-Toe_autogen-Debug-53428992cd01c72c75f6.json",
+					"name" : "Tic-Tak-Toe_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin",
+		"source" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

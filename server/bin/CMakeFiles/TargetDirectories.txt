@@ -1,0 +1,8 @@
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/server.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/edit_cache.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/rebuild_cache.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/list_install_components.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/install.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/install/local.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/install/strip.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/CMakeFiles/server_autogen.dir

@@ -1,0 +1,1 @@
+-I"C:/Users/isymo/Documents/Tic-Tak-Toe/server/bin/server_autogen/include" -isystem C:/Qt/6.5.1/mingw_64/include/QtCore -isystem C:/Qt/6.5.1/mingw_64/include -isystem "C:/Qt/6.5.1/mingw_64/mkspecs/win32-g++" -isystem C:/Qt/6.5.1/mingw_64/include/QtNetwork -isystem C:/Qt/6.5.1/mingw_64/include/QtSql

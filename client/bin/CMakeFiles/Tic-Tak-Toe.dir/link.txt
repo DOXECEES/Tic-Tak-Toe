@@ -1,0 +1,3 @@
+"C:\Install Programms\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Tic-Tak-Toe.dir/objects.a
+C:\Qt\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\Tic-Tak-Toe.dir/objects.a @CMakeFiles\Tic-Tak-Toe.dir\objects1
+C:\Qt\Tools\mingw1120_64\bin\g++.exe -DQT_QML_DEBUG -g -mwindows -Wl,--whole-archive CMakeFiles\Tic-Tak-Toe.dir/objects.a -Wl,--no-whole-archive -o Tic-Tak-Toe.exe -Wl,--out-implib,libTic-Tak-Toe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Tic-Tak-Toe.dir\linkLibs.rsp

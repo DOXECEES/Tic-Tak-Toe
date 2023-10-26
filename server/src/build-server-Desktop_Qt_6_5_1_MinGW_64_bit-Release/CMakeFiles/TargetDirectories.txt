@@ -1,0 +1,8 @@
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/server.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/edit_cache.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/rebuild_cache.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/list_install_components.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/install.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/install/local.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/install/strip.dir
+C:/Users/isymo/Documents/Tic-Tak-Toe/server/src/build-server-Desktop_Qt_6_5_1_MinGW_64_bit-Release/CMakeFiles/server_autogen.dir
