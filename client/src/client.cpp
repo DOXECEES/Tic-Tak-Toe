@@ -5,7 +5,7 @@ Client::Client(QObject *parent)
     : QTcpSocket(parent)
 {
     // Always change
-    QHostAddress *addr = new QHostAddress("192.168.0.101");
+    QHostAddress *addr = new QHostAddress("26.252.104.23");
     this->connectToHost(*addr, 6000);
 
 
