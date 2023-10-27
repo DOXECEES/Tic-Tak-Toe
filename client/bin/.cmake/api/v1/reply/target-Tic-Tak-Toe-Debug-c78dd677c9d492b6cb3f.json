@@ -1,0 +1,841 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Tic-Tak-Toe.exe"
+		},
+		{
+			"path" : "Tic-Tak-Toe.pdb"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies"
+		],
+		"files" : 
+		[
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"C:/Install Programms/CMake/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"C:/Qt/6.5.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 741,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 549,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 588,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 76,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 157,
+				"parent" : 10
+			},
+			{
+				"file" : 3,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 52,
+				"parent" : 12
+			},
+			{
+				"file" : 2,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 61,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 40,
+				"parent" : 12
+			},
+			{
+				"file" : 9,
+				"parent" : 16
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 39,
+				"parent" : 17
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 19
+			},
+			{
+				"file" : 6,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 52,
+				"parent" : 21
+			},
+			{
+				"file" : 5,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 61,
+				"parent" : 23
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 550,
+				"parent" : 2
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 26
+			},
+			{
+				"file" : 11,
+				"parent" : 27
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 52,
+				"parent" : 28
+			},
+			{
+				"file" : 10,
+				"parent" : 29
+			},
+			{
+				"command" : 6,
+				"file" : 10,
+				"line" : 61,
+				"parent" : 30
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 40,
+				"parent" : 28
+			},
+			{
+				"file" : 14,
+				"parent" : 32
+			},
+			{
+				"command" : 10,
+				"file" : 14,
+				"line" : 39,
+				"parent" : 33
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 34
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 35
+			},
+			{
+				"file" : 13,
+				"parent" : 36
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 52,
+				"parent" : 37
+			},
+			{
+				"file" : 12,
+				"parent" : 38
+			},
+			{
+				"command" : 6,
+				"file" : 12,
+				"line" : 61,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 12,
+				"line" : 76,
+				"parent" : 39
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 42
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 157,
+				"parent" : 43
+			},
+			{
+				"file" : 16,
+				"parent" : 44
+			},
+			{
+				"command" : 7,
+				"file" : 16,
+				"line" : 52,
+				"parent" : 45
+			},
+			{
+				"file" : 15,
+				"parent" : 46
+			},
+			{
+				"command" : 6,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 47
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 25,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "QT_NEEDS_QMAIN"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_SQL_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include"
+				},
+				{
+					"backtrace" : 25,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 25,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/include"
+				},
+				{
+					"backtrace" : 25,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/include/QtGui"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/include/QtSql"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.5.1/mingw_64/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					25,
+					25
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				5,
+				8,
+				11,
+				14,
+				17,
+				19,
+				20,
+				22,
+				24,
+				27
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Tic-Tak-Toe_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "Tic-Tak-Toe::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files (x86)/Tic-Tak-Toe"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-mwindows",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "C:\\Qt\\6.5.1\\mingw_64\\lib\\libQt6Widgets.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "C:\\Qt\\6.5.1\\mingw_64\\lib\\libQt6Sql.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "C:\\Qt\\6.5.1\\mingw_64\\lib\\libQt6Network.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "C:\\Qt\\6.5.1\\mingw_64\\lib\\libQt6Gui.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-ld3d11",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-ldxgi",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-ldxguid",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-ldcomp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "C:\\Qt\\6.5.1\\mingw_64\\lib\\libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "-lmpr",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "-luserenv",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "-lmingw32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "C:\\Qt\\6.5.1\\mingw_64\\lib\\libQt6EntryPoint.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "-lshell32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Tic-Tak-Toe",
+	"nameOnDisk" : "Tic-Tak-Toe.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				5,
+				8,
+				11,
+				14,
+				17,
+				19,
+				20,
+				22,
+				24,
+				27
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				4,
+				7,
+				10,
+				13,
+				16,
+				18,
+				21,
+				23,
+				26,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3,
+				6,
+				9,
+				12,
+				15,
+				25,
+				28,
+				29
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "widget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "widget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "widget.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "mainmenu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "mainmenu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "mainmenu.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "registrationdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "registrationdialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "registrationdialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "connectiondialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "connectiondialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "connectiondialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "creationdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "creationdialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "creationdialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "client.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "profile.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "profile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "bitboard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "bitboard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "statdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "statdialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "statdialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "revengedialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "revengedialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "revengedialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "res.rs",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_widget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_mainmenu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_registrationdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_connectiondialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_creationdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_statdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include/ui_revengedialog.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

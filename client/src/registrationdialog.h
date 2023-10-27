@@ -30,6 +30,9 @@ public:
 
 private:
     bool isOkAvailiable();
+    bool RequestVerification(QByteArray& arr);
+    bool RequestRegistration(QByteArray& arr);
+
 
 private slots:
     void GetLoginSlot(const QString &text);

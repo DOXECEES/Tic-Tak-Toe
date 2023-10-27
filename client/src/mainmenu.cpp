@@ -42,7 +42,7 @@ MainMenu::MainMenu(std::shared_ptr<Client>client, QWidget *parent) :
         profile = std::make_shared<Profile>(client);
     }
 
-    connect(ui->pushButton_4, &QPushButton::clicked, this, &QApplication::quit );
+    connect(ui->pushButton_4, &QPushButton::clicked, this, &MainMenu::ExitFromAccount );
     connect(ui->pushButton_5, &QPushButton::clicked, this, &MainMenu::ShowRegistrationDialog);
     connect(ui->pushButton,   &QPushButton::clicked, this, &MainMenu::ShowCreationDialog);
     connect(ui->pushButton_2, &QPushButton::clicked, this, &MainMenu::ShowConnectionDialog);
@@ -144,6 +144,14 @@ void MainMenu::ShowGameField()
 }
 
 
+void MainMenu::ExitFromAccount()
+{
+    QFile f("prof.txt");
+    f.open(QIODevice::WriteOnly | QIODevice::Text | QFile::Truncate);
+    f.write(nullptr);
+    f.close();
+    QApplication::quit();
+}
 
 
 Widget* MainMenu::w = nullptr;

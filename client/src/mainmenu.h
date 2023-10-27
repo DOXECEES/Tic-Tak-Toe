@@ -40,6 +40,7 @@ private slots:
     void ShowCreationDialog();
     void ShowConnectionDialog();
     void ShowStatisticsDialog();
+    void ExitFromAccount();
 signals:
     void DBRequestRecording(const QString& login, const QString& password);
     void rejected();

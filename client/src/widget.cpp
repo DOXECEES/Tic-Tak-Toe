@@ -95,6 +95,9 @@ void Widget::Draw()
     box.setStandardButtons(QMessageBox::Ok);
     box.setIcon(QMessageBox::Information);
     box.exec();
+
+    revDialog = new RevengeDialog(client,GetGameId(), this);
+    revDialog->show();
 }
 
 

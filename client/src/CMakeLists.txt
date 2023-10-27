@@ -39,9 +39,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         bitboard.h bitboard.cpp
         statdialog.h statdialog.cpp statdialog.ui
         revengedialog.h revengedialog.cpp revengedialog.ui
-
-
-
+        res.rs
 
     )
 # Define target properties for Android with Qt 6 as:

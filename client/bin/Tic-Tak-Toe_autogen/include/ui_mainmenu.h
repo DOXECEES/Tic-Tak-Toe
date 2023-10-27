@@ -137,7 +137,7 @@ public:
         pushButton_3->setText(QCoreApplication::translate("MainMenu", "\320\241\321\202\320\260\321\202\320\270\321\201\321\202\320\270\320\272\320\260", nullptr));
         pushButton->setText(QCoreApplication::translate("MainMenu", "\320\241\320\276\320\267\320\264\320\260\321\202\321\214 \320\270\320\263\321\200\321\203", nullptr));
         label_2->setText(QString());
-        pushButton_4->setText(QCoreApplication::translate("MainMenu", "\320\222\321\213\320\271\321\202\320\270", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainMenu", "\320\222\321\213\320\271\321\202\320\270 \320\270\320\267 \320\260\320\272\320\272\320\260\321\203\320\275\321\202\320\260", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainMenu", "\320\240\320\265\320\263\320\270\321\201\321\202\321\200\320\260\321\206\320\270\321\217", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainMenu", "\320\237\321\200\320\270\321\201\320\276\320\265\320\264\320\270\320\275\320\270\321\202\321\201\321\217 \320\272 \320\270\320\263\321\200\320\265", nullptr));
     } // retranslateUi

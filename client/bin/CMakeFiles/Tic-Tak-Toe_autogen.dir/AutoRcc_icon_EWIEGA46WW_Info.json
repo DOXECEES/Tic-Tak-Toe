@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/src",
+	"CMAKE_SOURCE_DIR" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/src",
+	"INCLUDE_DIR" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/Tic-Tak-Toe_autogen/include",
+	"INPUTS" : [ "C:/Users/isymo/Documents/Tic-Tak-Toe/client/src/icon.ico" ],
+	"LOCK_FILE" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/CMakeFiles/Tic-Tak-Toe_autogen.dir/AutoRcc_icon_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icon" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_icon.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.5.1/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/bin/CMakeFiles/Tic-Tak-Toe_autogen.dir/AutoRcc_icon_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/isymo/Documents/Tic-Tak-Toe/client/src/icon.qrc",
+	"VERBOSITY" : 0
+}

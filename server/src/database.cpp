@@ -36,10 +36,12 @@ DataBase::DataBase(QObject *parent)
 
 }
 
-// true - not recorded
-// false - recorded
-void DataBase::Record(const QString& login, const QString& password, bool &res)
+// false - not recorded
+// true - recorded
+void DataBase::Record(const QString& login, const QString& password, bool &res, TYPE type)
 {
+
+
     QSqlQuery query(db);
     if(!query.prepare(QString("INSERT INTO ACCOUNTS(UserName, PassWord, Wins, Loses, Draws) VALUES (:UserName, :PassWord, :Wins, :Loses, :Draws);")))
     {
@@ -47,7 +49,7 @@ void DataBase::Record(const QString& login, const QString& password, bool &res)
     }
 
 
-    GetRecords(login, password, res);
+    GetRecords(login, password, res, type);
     if(res == true) // res == true means that login or password has already been recorded
     {
         res = false;
@@ -72,24 +74,82 @@ void DataBase::Record(const QString& login, const QString& password, bool &res)
 }
 
 
-void DataBase::GetRecords(const QString& login, const QString& password, bool &res)
+// returns true if login(and password) equal to username(and password) in table
+void DataBase::GetRecords(const QString& login, const QString& password, bool &res, TYPE type )
 {
     QSqlQuery query(db);
 
-    if(!query.prepare("SELECT * FROM ACCOUNTS WHERE UserName = :UserName AND PassWord = :PassWord;"))
+    QString request;
+    switch (type)
     {
-        qDebug() << query.lastError().text();
+        case LOGIN_ONLY:
+        {
+            request = "SELECT UserName FROM ACCOUNTS WHERE UserName = :UserName";
+
+            if(!query.prepare(request))
+            {
+                qDebug() << query.lastError().text();
+            }
+            query.bindValue(":UserName", login);
+            qDebug() <<"REG DB";
+            break;
+        }
+        case LOGIN_PASSWORD:
+        {
+            request = "SELECT UserName, PassWord FROM ACCOUNTS WHERE UserName = :UserName AND PassWord = :PassWord";
+
+            if(!query.prepare(request))
+            {
+                qDebug() << query.lastError().text();
+            }
+            query.bindValue(":UserName", login);
+            query.bindValue(":PassWord", password);
+            qDebug() <<"VER DB";
+            break;
+        }
     }
 
-    query.bindValue(":UserName", login);
-    query.bindValue(":PassWord", password);
+
+
+
 
     if(query.exec())
     {
         if(query.next())
+        {
+            qDebug() << "NEXT entr";
+            /*switch (type)
+            {
+                case LOGIN_ONLY:
+                {
+                    if(login == query.value(":UserName"))
+                    {
+                        res = true;
+                    }
+                    else
+                        res = false;
+                    break;
+                }
+                case LOGIN_PASSWORD:
+                {
+                    if(query.value(":UserName") == login
+                        && query.value(":PassWord") == password)
+                    {
+                        res = true;
+                    }
+                    else
+                        res = false;
+                    break;
+                }
+            }*/
             res = true;
+            qDebug() << res;
+        }
         else
+        {
             res = false;
+            qDebug() << "NOT FOUND";
+        }
 
     }
 }

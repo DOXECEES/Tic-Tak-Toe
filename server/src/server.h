@@ -74,8 +74,8 @@ private:
     std::unordered_map<long long int, int> userInGame;
 
 signals:
-    void RequestFromDataBaseSignal(const QString& login, const QString& password, bool &res);
-    void RequestWritetoDataBaseSignal(const QString& login, const QString& password, bool &res);
+    void RequestFromDataBaseSignal(const QString& login, const QString& password, bool &res, DataBase::TYPE type);
+    void RequestWritetoDataBaseSignal(const QString& login, const QString& password, bool &res, DataBase::TYPE type);
     void RequestAnswerSignal(const QByteArray& arr, QTcpSocket *client);
 
 };

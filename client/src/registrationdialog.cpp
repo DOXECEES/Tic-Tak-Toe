@@ -42,7 +42,8 @@ RegistrationDialog::RegistrationDialog(std::shared_ptr<Client> client, QWidget *
                      this, &RegistrationDialog::SendToServerSlot);
     QObject::connect(this, &RegistrationDialog::SendToServerSignal,
                      client.get(), &Client::SendSlot);
-    QObject::connect(ui->pushButton, &QPushButton::clicked, this, &RegistrationDialog::SendToServerSlot);
+    QObject::connect(ui->pushButton, &QPushButton::clicked,
+                     this, &RegistrationDialog::SendToServerSlot);
 
 
 }
@@ -64,6 +65,7 @@ void RegistrationDialog::GetLoginSlot(const QString &text)
                              "и может содержать цифры, буквы и символ подчеркивания");
     }
     ui->buttonBox->buttons().at(0)->setEnabled(isOkAvailiable());
+    ui->pushButton->setEnabled(isOkAvailiable());
 
 
 }
@@ -84,6 +86,7 @@ void RegistrationDialog::GetPasswordSlot(const QString &text)
         ui->label_3->setText("Пароль должен содержать не менее 6 символов\n цифр, букв или символоа подчеркивания");
     }
     ui->buttonBox->buttons().at(0)->setEnabled(isOkAvailiable());
+    ui->pushButton->setEnabled(isOkAvailiable());
 
 }
 
@@ -94,16 +97,15 @@ bool RegistrationDialog::isOkAvailiable()
 }
 
 
-void RegistrationDialog::SendToServerSlot()
+bool RegistrationDialog::RequestRegistration(QByteArray& arr)
 {
-    QByteArray buf;
-    buf.push_back(Client::SenderCodes::REGISTRATION_CODE);
-    buf.push_back(login.size());
-    buf.push_back(login.toUtf8());
-    buf.push_back(password.size());
-    buf.push_back(password.toUtf8());
-    bool res;
-    QByteArray ans = SendToServer(buf);
+    arr.push_back(Client::SenderCodes::REGISTRATION_CODE);
+    arr.push_back(login.size());
+    arr.push_back(login.toUtf8());
+    arr.push_back(password.size());
+    arr.push_back(password.toUtf8());
+
+    QByteArray ans = SendToServer(arr);
     if(ans[0] == Client::ServerCodes::OK)
     {
         client->SetLogin(login);
@@ -116,12 +118,53 @@ void RegistrationDialog::SendToServerSlot()
             ac.close();
         }
         emit accept();
+        return true;
     }
     else
     {
+        return false;
+    }
+
+}
 
 
-        if(sender() == ui->buttonBox)
+bool RegistrationDialog::RequestVerification(QByteArray& arr)
+{
+    arr.push_back(Client::SenderCodes::VERIFICATION_CODE);
+    arr.push_back(login.size());
+    arr.push_back(login.toUtf8());
+    arr.push_back(password.size());
+    arr.push_back(password.toUtf8());
+
+    QByteArray ans = SendToServer(arr);
+    if(ans[0] == Client::ServerCodes::OK)
+    {
+        client->SetLogin(login);
+        if(ui->checkBox->checkState() == Qt::CheckState::Checked)
+        {
+            QFile ac(pathToAcount);
+            ac.open(QIODevice::WriteOnly | QIODevice::Text);
+            ac.write(login.toUtf8() + '\n');
+            ac.write(password.toUtf8());
+            ac.close();
+        }
+        emit accept();
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+void RegistrationDialog::SendToServerSlot()
+{
+    QByteArray buf;
+
+    if(sender() == ui->buttonBox)
+    {
+        if(!RequestRegistration(buf))
         {
             QMessageBox box;
             box.setText("Логин занят");
@@ -129,22 +172,19 @@ void RegistrationDialog::SendToServerSlot()
             box.setIcon(QMessageBox::Information);
             box.exec();
         }
-
-        if(sender() == ui->pushButton)
-        {
-            client->SetLogin(login);
-            if(ui->checkBox->checkState() == Qt::CheckState::Checked)
-            {
-                QFile ac(pathToAcount);
-                ac.open(QIODevice::WriteOnly | QIODevice::Text);
-                ac.write(login.toUtf8() + '\n');
-                ac.write(password.toUtf8());
-                ac.close();
-            }
-            emit accept();
-        }
-
     }
+    else
+    {
+        if(!RequestVerification(buf))
+        {
+            QMessageBox box;
+            box.setText("Неверный логин или пароль");
+            box.setStandardButtons(QMessageBox::Ok);
+            box.setIcon(QMessageBox::Information);
+            box.exec();
+        }
+    }
+
 
 }
 

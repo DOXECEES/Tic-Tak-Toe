@@ -33,7 +33,6 @@ QByteArray Server::Proccess(const QByteArray &arr, QTcpSocket *const sender)
         {
             uint8_t loginSize = 0;
             uint8_t passwordSize = 0;
-
             uint32_t offset = 1;    // first byte is registration code
             QString login;
             loginSize = static_cast<uint8_t>(*arr.mid(offset,1));
@@ -50,8 +49,10 @@ QByteArray Server::Proccess(const QByteArray &arr, QTcpSocket *const sender)
             QString password;
             password = arr.mid(offset,passwordSize);
 
+
+
             bool res;
-            emit RequestWritetoDataBaseSignal(login, password, res);
+            emit RequestWritetoDataBaseSignal(login, password, res, DataBase::TYPE::LOGIN_ONLY);
             qDebug() << login << password ;
 
             if(res == true)
@@ -161,7 +162,7 @@ QByteArray Server::Proccess(const QByteArray &arr, QTcpSocket *const sender)
 
             // Request to DB;
             bool res;
-            emit RequestFromDataBaseSignal(login, password, res);
+            emit RequestFromDataBaseSignal(login, password, res, DataBase::TYPE::LOGIN_PASSWORD);
 
             if(res)
             {
@@ -255,11 +256,11 @@ QByteArray Server::Proccess(const QByteArray &arr, QTcpSocket *const sender)
 
             qDebug() << board;
 
-            //currentGames[gameId]->SetBoard(board);
+            currentGames[gameId]->SetBoard(board);
 
             auto profils = currentGames[gameId]->GetProfils();
 
-            currentGames[gameId]->SetBoard(board);
+            //currentGames[gameId]->SetBoard(board);
 
             qDebug() << "LAST BOARD" << currentGames[gameId]->GetLastBoard();
             qDebug() << "PREV BOARD" << prevBoard;
@@ -267,23 +268,22 @@ QByteArray Server::Proccess(const QByteArray &arr, QTcpSocket *const sender)
             buf.push_back(ServerCodes::SET_CELL);
             buf.push_back(pos);
 
-            if(currentGames[gameId]->isDraw(prevBoard))
+            if(currentGames[gameId]->isDraw(prevBoard) && !currentGames[gameId]->isPlayerWin())
             {
                 buf.clear();
                 buf.push_back(ServerCodes::DRAW);
-                db.Update(DataBase::COLUMNS::WINS, currentGames[gameId]->GetSenderLoginR(sender));
-                db.Update(DataBase::COLUMNS::LOSES, currentGames[gameId]->GetSenderLogin(sender));
+                db.Update(DataBase::COLUMNS::DRAWS, currentGames[gameId]->GetSenderLogin(sender));
+                db.Update(DataBase::COLUMNS::DRAWS, currentGames[gameId]->GetSenderLoginR(sender));
             }
-
-            if(currentGames[gameId]->isPlayerWin())
+            else if(currentGames[gameId]->isPlayerWin())
             {
-                QString login = currentGames[gameId]->GetSenderLoginR(sender);
+                QString login = currentGames[gameId]->GetSenderLogin(sender);
                 buf.clear();
                 buf.push_back(ServerCodes::WIN);
                 buf.push_back(login.size());
                 buf.push_back(login.toUtf8());
                 db.Update(DataBase::COLUMNS::WINS, login);
-                db.Update(DataBase::COLUMNS::LOSES, currentGames[gameId]->GetSenderLogin(sender));
+                db.Update(DataBase::COLUMNS::LOSES, currentGames[gameId]->GetSenderLoginR(sender));
             }
 
 
